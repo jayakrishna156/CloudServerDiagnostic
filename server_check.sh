@@ -39,7 +39,12 @@ uptime
 echo ""
 echo "7. SSH SERVICE"
 echo "--------------------------------------"
-systemctl is-active ssh
+
+if systemctl is-active --quiet ssh; then
+    echo "SSH Status: RUNNING"
+else
+    echo "SSH Status: NOT RUNNING"
+fi
 
 echo ""
 echo "8. LISTENING PORTS"
@@ -59,3 +64,6 @@ echo ""
 echo "======================================"
 echo "       HEALTH CHECK COMPLETE"
 echo "======================================"
+
+echo ""
+echo "Diagonstic performed successfully."
