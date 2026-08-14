@@ -28,3 +28,6 @@ A Bash-based Linux server health and network diagnostic tool.
 ```bash
 chmod +x server_check.sh
 ./server_check.sh
+
+## Day 9
+Project connected to GitHub using SSH.
