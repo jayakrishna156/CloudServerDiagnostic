@@ -67,3 +67,8 @@ echo "======================================"
 
 echo ""
 echo "Diagonstic performed successfully."
+echo ""
+
+echo "11. DIAGNOSTIC STATUS"
+echo "---------------------"
+echo "Server diagnostic completed successfully."
