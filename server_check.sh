@@ -78,3 +78,5 @@ echo "Server diagnostic report generated successfully."
 echo "Hostname: $(hostname)"
 echo "IP Address: $(hostname -I | awk '{print $1}')"
 echo "Date: $(date)"
+
+echo "Diagnostic version: 1.1.0"
