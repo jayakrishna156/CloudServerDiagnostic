@@ -80,3 +80,4 @@ echo "IP Address: $(hostname -I | awk '{print $1}')"
 echo "Date: $(date)"
 
 echo "Diagnostic version: 2.0.0"
+
