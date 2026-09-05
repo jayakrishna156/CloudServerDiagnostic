@@ -86,3 +86,9 @@ echo "Day 20 feature change"
 echo "Day 21 selected feature"
 
 echo "Day 22 initial change"
+
+echo "Diagonstic preparation"
+
+echo "Temporary debug message"
+
+echo "Day 22 final output"
