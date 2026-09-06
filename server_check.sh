@@ -66,7 +66,7 @@ echo "       HEALTH CHECK COMPLETE"
 echo "======================================"
 
 echo ""
-echo "Diagonstic performed successfully."
+ech0 "Diagonstic performed successfully."
 echo ""
 
 echo "11. DIAGNOSTIC STATUS"
