@@ -96,3 +96,5 @@ echo "Day 26 merge feature - step 2"
 echo "Day 27 commit 1"
 
 echo "Day 27 commit 2"
+
+echo "Day 27 commit 4"
