@@ -87,3 +87,4 @@ echo "Day 21 selected feature"
 
 echo "Day 25 detached HEAD experiment"
 
+echo "Day 26 merge feature - step 1"
