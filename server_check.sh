@@ -28,8 +28,16 @@ df -h
 
 echo ""
 echo "5. MEMORY"
-echo "--------------------------------------"
+echo "------------------------------------"
 free -h
+
+MEM_TOTAL=$(free -m | awk '/^Mem:/ {print $2}')
+MEM_AVAILABLE=$(free -m | awk '/^Mem:/ {print $7}')
+MEM_USED_PERCENT=$(awk "BEGIN {printf \"%.2f\", (($MEM_TOTAL - $MEM_AVAILABLE) / $MEM_TOTAL) * 100}")
+
+echo "Total Memory: ${MEM_TOTAL} MB"
+echo "Available Memory: ${MEM_AVAILABLE} MB"
+echo "Memory Usage: ${MEM_USED_PERCENT}%"
 
 echo ""
 echo "6. CPU / LOAD"
