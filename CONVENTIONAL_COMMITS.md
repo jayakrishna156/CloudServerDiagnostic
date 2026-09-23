@@ -23,3 +23,7 @@ docs: update README
 refactor: simplify server check logic
 test: add server check tests
 chore: update project configuration
+
+## Why Use Conventional Commits?
+
+They make project history easier to read and help teams understand what each commit changes.
