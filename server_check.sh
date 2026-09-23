@@ -93,3 +93,5 @@ echo "Day 26 merge feature - step 1"
 
 echo "Day 26 merge feature - step 2"
 
+echo ""
+echo "Day 33 branch protection test"
