@@ -13,7 +13,7 @@ type: description
 - docs: Documentation changes
 - refactor: Code restructuring
 - test: Adding or modifying tests
-- chore: Maintenance tasks
+- chore: Maintenance and configuration tasks
 
 ## Examples
 
