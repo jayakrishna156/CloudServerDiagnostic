@@ -2,6 +2,7 @@ name: Day 37 - GitHub Actions Basics
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   basic-actions:
