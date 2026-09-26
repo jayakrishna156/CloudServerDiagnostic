@@ -1,0 +1,29 @@
+name: Day 37 - GitHub Actions Basics
+
+on:
+  push:
+
+jobs:
+  basic-actions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show runner information
+        run: |
+          echo "GitHub Actions is running!"
+          echo "Runner: $(uname -a)"
+          echo "Current directory: $(pwd)"
+
+      - name: Check repository files
+        run: |
+          echo "Repository files:"
+          ls -la
+
+      - name: Run server diagnostic
+        run: |
+          chmod +x server_check.sh
+          bash -n server_check.sh
+          echo "server_check.sh syntax check passed!"
