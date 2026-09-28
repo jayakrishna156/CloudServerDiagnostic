@@ -1,0 +1,36 @@
+name: Day 38 - CI Pipeline
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show environment
+        run: |
+          echo "CI pipeline started"
+          echo "Runner: $(uname -a)"
+          echo "Directory: $(pwd)"
+
+      - name: Validate shell script
+        run: |
+          bash -n server_check.sh
+          echo "Shell syntax check passed!"
+
+      - name: Run server diagnostic
+        run: |
+          chmod +x server_check.sh
+          ./server_check.sh
+
+      - name: CI pipeline completed
+        run: |
+          echo "CI pipeline completed successfully!"
