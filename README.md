@@ -31,3 +31,4 @@ chmod +x server_check.sh
 
 ## Day 9
 Project connected to GitHub using SSH.
+# Day 37 GitHub Actions trigger test
