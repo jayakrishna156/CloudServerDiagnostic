@@ -40,7 +40,7 @@ echo ""
 echo "7. SSH SERVICE"
 echo "--------------------------------------"
 
-if systemctl is-active --quiet ssh; then
+if command -v systemctl >/dev/null 2>&1 && systemctl is-active --quiet ssh; then
     echo "SSH Status: RUNNING"
 else
     echo "SSH Status: NOT RUNNING"
