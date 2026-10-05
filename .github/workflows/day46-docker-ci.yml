@@ -1,0 +1,30 @@
+name: Day 46 - Docker CI
+
+on:
+  push:
+    branches:
+      - feature/day46-git-cicd
+
+jobs:
+  docker-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build -t cloud-server-diagnostic:ci .
+
+      - name: Test Docker container
+        run: |
+          docker run --name day46-container cloud-server-diagnostic:ci
+
+      - name: Show container logs
+        run: |
+          docker logs day46-container
+
+      - name: Remove container
+        run: |
+          docker rm day46-container
